@@ -1,6 +1,5 @@
 void main(){
   var obj = child();
-  obj.chilMoney();
   obj.FatherMOney();
 }
 abstract class father{
@@ -9,7 +8,7 @@ abstract class father{
   }
 }
 class child extends father{
-  chilMoney(){
+  FatherMOney(){
     print("child has 30 millions dollars");
   }
 }
