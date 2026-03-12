@@ -4,8 +4,9 @@ class mySecond{
   myname(){
     print("this is myname methods");
   }
-  myid(){
+  myid(int num1, int num2){
     print("this is myid methods");
+    print(num1+num2);
   }
   mySecond(){
     print("this is me");

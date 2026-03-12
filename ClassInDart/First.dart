@@ -6,5 +6,5 @@ void main(){
   print(obj.id);
 
   obj.myname();
-  obj.myid();
+  obj.myid(20,30);
 }
