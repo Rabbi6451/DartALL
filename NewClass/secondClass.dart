@@ -1,7 +1,6 @@
 class second{
   int k=50;
   int j=50;
-  int h=0,f=8;
 
 
   second(){
