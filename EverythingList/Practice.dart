@@ -3,5 +3,6 @@ void main(){
   String list1=mylist.join(" ");
   print(list1);
   mylist.add("rabbi");
-  print(mylist);
+  print(mylist.join(" "));
+
 }
