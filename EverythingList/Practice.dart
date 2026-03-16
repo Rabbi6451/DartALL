@@ -8,4 +8,5 @@ void main(){
   print(mylist.join(" "));
   mylist.removeAt(0);
   print(mylist.join(" "));
+  print(mylist.length);
 }
