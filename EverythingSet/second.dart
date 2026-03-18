@@ -8,3 +8,4 @@ void main()
 
   print("Output of the set is: $gfg1");
 }
+//Set means it will only contain unique value duplicate not allow here
