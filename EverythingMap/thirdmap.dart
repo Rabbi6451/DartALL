@@ -4,4 +4,5 @@ void main() {
 
   m.addAll({'dept':'HR','email':'tom@xyz.com'});
   print('Map after adding  entries :${m}');
+  print(m['name']);
 }
