@@ -6,4 +6,8 @@ void main() {
   print('Map after adding  entries :${m}');
   print(m['name']);
   m.forEach((A,b) => print('$A : $b'));
+  m.clear();
+  print(m);
+  m.addAll({'name':'rabbiHasson' , 'Address ' : 'Chandpur'});
+  print(m.values.join(','));
 }
