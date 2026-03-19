@@ -8,11 +8,9 @@ void main() {
       print("This is not the correct case.");
       break;
     case Gfg.to:
-    // Executes if 'geek' has the value Gfg.to
       print("This is not the correct case.");
       break;
     case Gfg.GeeksForGeeks:
-    // Executes if 'geek' has the value Gfg.GeeksForGeeks
       print("This is the correct case.");
       break;
   }
