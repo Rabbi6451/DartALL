@@ -1,21 +1,15 @@
-// Creating Abstract Class
 abstract class Gfg {
-  // Creating Abstract Method
   void geek_info();
 }
 
-// Class Geek1 Inheriting Gfg class
 class Geek1 extends Gfg {
-  // Overriding method
   @override
   void geek_info() {
     print("This is Class Geek1.");
   }
 }
 
-// Class Geek2 Inheriting Gfg class
 class Geek2 extends Gfg {
-  // Overriding method again
   @override
   void geek_info() {
     print("This is Class Geek2.");
