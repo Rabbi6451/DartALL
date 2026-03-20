@@ -7,13 +7,12 @@ class Laptop {
 
 class MacBook extends Laptop {
   void show() {
-    super.show(); // Calling the show method of the parent class
+    super.show();
     print("MacBook show method");
   }
 }
 
 void main() {
-  // Creating an object of the MacBook class
   MacBook macbook = MacBook();
   macbook.show();
 }
