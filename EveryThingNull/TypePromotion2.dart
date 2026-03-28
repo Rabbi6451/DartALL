@@ -1,6 +1,6 @@
 void main(){
   String result;
-  if(DateTime.now().hour < 12) {
+  if(DateTime.now().hour < 14) {
     result = "Good Morning";
   } else {
     result = "Good Afternoon";
