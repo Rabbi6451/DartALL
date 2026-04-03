@@ -5,11 +5,9 @@ abstract class Shape {
 
   void area();
 }
-
 class Rectangle extends Shape {
 
   Rectangle(int dim1, int dim2) : super(dim1, dim2);
-
 
   @override
   void area() {
@@ -20,7 +18,6 @@ class Rectangle extends Shape {
 class Triangle extends Shape {
 
   Triangle(int dim1, int dim2) : super(dim1, dim2);
-
 
   @override
   void area() {
