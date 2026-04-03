@@ -12,7 +12,7 @@ class Student implements CalculateTotal, CalculateAverage {
   double average() {
     return total() / 3;
   }
-// implementation of total()
+
   @override
   int total() {
     return marks1 + marks2 + marks3;
