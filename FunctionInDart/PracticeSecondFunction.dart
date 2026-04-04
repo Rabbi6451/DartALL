@@ -1,5 +1,5 @@
 void second1(double first, double second, double third){
-  double average = first + second + third;
+  double average = first + second + third/3;
   print("The average is $average");
 }
 void main(){
