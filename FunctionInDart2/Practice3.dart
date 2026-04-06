@@ -21,11 +21,11 @@ void main(){
   stdout.write("Enter do you want ? ");
   String? chose = stdin.readLineSync();
   if(chose == '+'){
-    print(sum(first.toInt(),second.toInt()));
+    print("The sum of two number is ${sum(first.toInt(),second.toInt())}");
   }else if(chose == '/'){
-    print(div(first.toInt(),second.toInt()));
+    print("The div of two number is ${div(first.toInt(),second.toInt())}");
   }else if(chose =='*'){
-    print(mul(first.toInt(), second.toInt()));
+    print("The mul of two number is ${mul(first.toInt(), second.toInt())}");
   }
   else{
     print("Invalid ");
