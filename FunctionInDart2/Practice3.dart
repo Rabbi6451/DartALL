@@ -14,11 +14,11 @@ int mul(int first, int second){
 
 }
 void main(){
-  print("Enter your first number : ");
+  stdout.write("Enter your first number : ");
   double first = double.parse(stdin.readLineSync()!);
-  print("Enter you second number : ");
+  stdout.write("Enter you second number : ");
   double second = double.parse(stdin.readLineSync()!);
-  print("Enter do you want ? ");
+  stdout.write("Enter do you want ? ");
   String? chose = stdin.readLineSync();
   if(chose == '+'){
     print(sum(first.toInt(),second.toInt()));
