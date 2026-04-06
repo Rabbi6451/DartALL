@@ -22,7 +22,12 @@ void main(){
   String? chose = stdin.readLineSync();
   if(chose == '+'){
     print(sum(first.toInt(),second.toInt()));
-  }else{
+  }else if(chose == '/'){
+    print(div(first.toInt(),second.toInt()));
+  }else if(chose =='*'){
+    print(mul(first.toInt(), second.toInt()));
+  }
+  else{
     print("Invalid ");
   }
 }
