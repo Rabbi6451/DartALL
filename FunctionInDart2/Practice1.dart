@@ -1,9 +1,8 @@
-void first(int a, int b){
-  var sum = a + b;
-  print("The sum is $sum");
+int me(int first1,int first2){
+  int sum1 = first1+first2;
+  print(sum1);
+  return sum1;
 }
 void main(){
-  int num1= 10;
-  int num2 = 30;
-  first(num1,num2);
+  me(4,5);
 }
