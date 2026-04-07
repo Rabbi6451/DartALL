@@ -1,6 +1,6 @@
-int add(int num1,int num2) => num1+num2;
+int add (int num1, int num2) => num1 + num2;
+
 void main(){
-  int num1=4;
-  int num2=5;
-  print(add(num1, num2));
+  int sum = add(4,5);
+  print(sum);
 }
