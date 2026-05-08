@@ -1,0 +1,76 @@
+import 'dart:io';
+
+class Task {
+  String title;
+  bool isCompleted;
+
+  Task(this.title, {this.isCompleted = false});
+
+  @override
+  String toString() {
+    return '[${isCompleted ? '✔' : ' '}] $title';
+  }
+}
+
+void main() {
+  List<Task> tasks = [];
+  bool isRunning = true;
+
+  print('--- Welcome to QuickTask CLI ---');
+
+  while (isRunning) {
+    print('\nOptions: 1. Add  2. View  3. Complete  4. Delete  5. Exit');
+    stdout.write('Select an option (1-5): ');
+    
+    String? choice = stdin.readLineSync();
+
+    switch (choice) {
+      case '1':
+        stdout.write('Enter task title: ');
+        String? title = stdin.readLineSync();
+        if (title != null && title.isNotEmpty) {
+          tasks.add(Task(title));
+          print('Task added!');
+        }
+        break;
+
+      case '2':
+        print('\n--- Your Tasks ---');
+        if (tasks.isEmpty) print('No tasks yet.');
+        for (var i = 0; i < tasks.length; i++) {
+          print('${i + 1}. ${tasks[i]}');
+        }
+        break;
+
+      case '3':
+        stdout.write('Enter task number to mark complete: ');
+        int? index = int.tryParse(stdin.readLineSync() ?? '');
+        if (index != null && index > 0 && index <= tasks.length) {
+          tasks[index - 1].isCompleted = true;
+          print('Task marked as done!');
+        } else {
+          print('Invalid number.');
+        }
+        break;
+
+      case '4':
+        stdout.write('Enter task number to delete: ');
+        int? delIndex = int.tryParse(stdin.readLineSync() ?? '');
+        if (delIndex != null && delIndex > 0 && delIndex <= tasks.length) {
+          tasks.removeAt(delIndex - 1);
+          print('Task deleted.');
+        } else {
+          print('Invalid number.');
+        }
+        break;
+
+      case '5':
+        isRunning = false;
+        print('Goodbye!');
+        break;
+
+      default:
+        print('Invalid choice, try again.');
+    }
+  }
+}
